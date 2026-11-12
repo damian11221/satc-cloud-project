@@ -1,0 +1,7 @@
+template-file-path: SATC-Infrastructure.yaml
+parameters:
+  PublicSubnetCIDR: 10.10.1.0/24
+  PrivateSubnetCIDR: 10.10.11.0/24
+  VpcCIDR: 10.10.0.0/16
+  EnvironmentName: SATC-IaC
+tags: {}

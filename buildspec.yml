@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Starting SATC build"
+  pre_build:
+    commands:
+      - echo "Checking required files"
+      - test -f index.html
+      - test -f lambda_function.py
+      - test -f appspec.yml
+  build:
+    commands:
+      - echo "Build completed successfully"
+
+artifacts:
+  files:
+    - '**/*'
